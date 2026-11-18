@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- EDIT: Meta Informasi & SEO -->
+    <title>Galang Putra Cahyono - HR Recruiter & Talent Acquisition Specialist</title>
+    <meta name="description" content="Portofolio profesional Galang Putra Cahyono, HR Recruiter dan Talent Acquisition Specialist berbasis di Malang, Indonesia.">
+    <meta name="theme-color" content="#1e3a8a">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Galang Putra Cahyono - HR Recruiter & Talent Acquisition">
+    <meta property="og:description" content="Portofolio profesional Galang Putra Cahyono, HR Recruiter dan Talent Acquisition Specialist.">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Galang Putra Cahyono - HR Recruiter & Talent Acquisition">
+    <meta name="twitter:description" content="Portofolio profesional Galang Putra Cahyono, HR Recruiter dan Talent Acquisition Specialist.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* EDIT: Variabel Desain & Warna Utama (Cobalt Blue + Kuning Aksen) */
+        :root {
+            --primary: #1d4ed8;
+            --primary-hover: #1e40af;
+            --accent: #f59e0b;
+            --bg: #f8fafc;
+            --surface: #ffffff;
+            --text: #0f172a;
+            --text-muted: #475569;
+            --border: #cbd5e1;
+            --card-bg: #ffffff;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        }
+
+        [data-theme="dark"] {
+            --primary: #3b82f6;
+            --primary-hover: #60a5fa;
+            --accent: #fbbf24;
+            --bg: #0f172a;
+            --surface: #1e293b;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+            --border: #334155;
+            --card-bg: #1e293b;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Reset & Base */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            transition: var(--transition);
+        }
+
+        /* Skip Link untuk Aksesibilitas */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--primary);
+            color: white;
+            padding: 8px 16px;
+            z-index: 100;
+            transition: top 0.2s;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 0 0 4px 0;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        /* Navigasi Sticky */
+        header {
+            position: sticky;
+            top: 0;
+            background-color: var(--surface);
+            border-bottom: 1px solid var(--border);
+            z-index: 50;
+            backdrop-filter: blur(8px);
+            background-color: var(--surface);
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-muted);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover, .nav-links a:focus {
+            color: var(--primary);
+        }
+
+        .theme-toggle {
+            background: none;
+            border: 1px solid var(--border);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: var(--text);
+            font-size: 1.1rem;
+            transition: background-color 0.2s, border-color 0.2s;
+        }
+
+        .theme-toggle:hover {
+            background-color: var(--bg);
+            border-color: var(--primary);
+        }
+
+        /* Layout Container */
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        section {
+            padding: 4rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            font-weight: 700;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        h2::after {
+            content: '';
+            flex: 1;
+            height: 2px;
+            background: var(--border);
+            margin-left: 1rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 5rem 0 4rem;
+            text-align: left;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .hero .profession {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero .summary {
+            font-size: 1.125rem;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin-bottom: 2rem;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--text);
+            border: 1px solid var(--border);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        /* Filter Keahlian */
+        .filter-container {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .filter-btn {
+            background-color: var(--surface);
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .filter-btn[aria-pressed="true"], .filter-btn:hover {
+            background-color: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        /* Pengalaman (Accordion) */
+        .experience-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+
+        .exp-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: border-color 0.2s;
+        }
+
+        .exp-card:hover {
+            border-color: var(--primary);
+        }
+
+        .exp-header {
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 1.25rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            text-align: left;
+            color: var(--text);
+        }
+
+        .exp-title-group h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .exp-title-group .company {
+            font-size: 0.95rem;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .exp-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .exp-period {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .accordion-icon {
+            font-size: 1.25rem;
+            transition: transform 0.3s ease;
+        }
+
+        .exp-header[aria-expanded="true"] .accordion-icon {
+            transform: rotate(180deg);
+        }
+
+        .exp-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+            padding: 0 1.5rem;
+            background-color: var(--surface);
+        }
+
+        .exp-content.active {
+            max-height: 500px;
+            padding: 0 1.5rem 1.5rem 1.5rem;
+        }
+
+        .exp-content ul {
+            list-style-type disc;
+            padding-left: 1.25rem;
+            color: var(--text-muted);
+        }
+
+        .exp-content li {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        /* Proyek Grid */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: var(--shadow);
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--primary);
+        }
+
+        .project-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+        }
+
+        .project-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-link {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--primary);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Keahlian & Alat */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .skill-tag {
+            background-color: var(--surface);
+            border: 1px solid var(--border);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text);
+            box-shadow: var(--shadow);
+        }
+
+        /* Sertifikasi & Pendidikan */
+        .edu-cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .sub-section h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .item-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 1.25rem;
+            margin-bottom: 1rem;
+            box-shadow: var(--shadow);
+        }
+
+        .item-card h4 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .item-card p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* Kontak */
+        .contact-content {
+            font-size: 1.125rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-item:hover {
+            color: var(--primary);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2.5rem 1.5rem;
+            background-color: var(--surface);
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+
+        /* Focus Visible Aksesibilitas */
+        :focus-visible {
+            outline: 3px solid var(--primary);
+            outline-offset: 2px;
+        }
+
+        /* Animasi Scroll (Reduced Motion Friendly) */
+        @media (prefers-reduced-motion: no-preference) {
+            .reveal {
+                opacity: 0;
+                transform: translateY(20px);
+                transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            }
+            .reveal.active {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* CSS Print Styling untuk CV */
+        @media print {
+            header, .theme-toggle, .filter-container, .hero-cta, footer, .skip-link {
+                display: none !important;
+            }
+            body {
+                background: white;
+                color: black;
+                font-size: 12pt;
+            }
+            main {
+                max-width: 100%;
+                padding: 0;
+            }
+            section {
+                padding: 1.5rem 0;
+                border-bottom: 1px solid #ccc;
+            }
+            .exp-content {
+                max-height: none !important;
+                padding: 0 !important;
+            }
+            .exp-card, .project-card, .item-card, .skill-tag {
+                border: none;
+                box-shadow: none;
+                background: none;
+                padding: 0;
+                margin-bottom: 0.5rem;
+            }
+            .accordion-icon {
+                display: none;
+            }
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none; /* Sederhana untuk mobile */
+            }
+            .hero {
+                padding: 3rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- EDIT: Skip Link untuk aksesibilitas -->
+    <a href="#main-content" class="skip-link">Lewati ke konten utama</a>
+
+    <!-- EDIT: Navigasi Atas (Sticky) -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo"><!-- EDIT: Nama Brand / Inisial -->Galang Putra Cahyono</a>
+            <nav aria-label="Navigasi Utama">
+                <ul class="nav-links">
+                    <li><a href="#pengalaman">Pengalaman</a></li>
+                    <li><a href="#proyek">Proyek</a></li>
+                    <li><a href="#keahlian">Keahlian</a></li>
+                    <li><a href="#sertifikasi">Sertifikasi</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" id="themeToggle" aria-label="Ganti mode terang/gelap">
+                🌓
+            </button>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- EDIT: Bagian Hero -->
+        <section class="hero reveal">
+            <h1><!-- EDIT: NAMA LENGKAP -->Galang Putra Cahyono</h1>
+            <p class="profession"><!-- EDIT: Profesi -->HR Recruiter & Talent Acquisition Specialist</p>
+            <p class="summary"><!-- EDIT: Ringkasan diri (2-3 kalimat) -->Berpengalaman dalam mengelola talent pipeline, merancang gamified psychometric assessment, dan menerapkan sistem HRIS & ERP berbasis teknologi untuk efisiensi rekrutmen perusahaan.</p>
+            <div class="hero-cta">
+                <a href="#kontak" class="btn btn-primary">Hubungi Saya</a>
+                <a href="#pengalaman" class="btn btn-outline">Lihat Pengalaman</a>
+            </div>
+        </section>
+
+        <!-- EDIT: Bagian Pengalaman Kerja -->
+        <section id="pengalaman" class="reveal">
+            <h2>Pengalaman Kerja</h2>
+
+            <!-- Filter Pengalaman berdasarkan Keahlian -->
+            <div class="filter-container" role="toolbar" aria-label="Filter pengalaman">
+                <button class="filter-btn" aria-pressed="true" data-filter="all">Semua</button>
+                <button class="filter-btn" aria-pressed="false" data-filter="recruitment">Recruitment & Talent</button>
+                <button class="filter-btn" aria-pressed="false" data-filter="hris">HRIS & ERP</button>
+            </div>
+
+            <div class="experience-list">
+                <!-- Pengalaman 1 -->
+                <article class="exp-card" data-category="recruitment hris">
+                    <button class="exp-header" aria-expanded="false" aria-controls="exp-1-content">
+                        <div class="exp-title-group">
+                            <h3><!-- EDIT: Jabatan -->HR Recruiter & Talent Acquisition Specialist</h3>
+                            <span class="company"><!-- EDIT: Perusahaan -->PT Beon Intermedia & Jagoan Hosting</span>
+                        </div>
+                        <div class="exp-meta">
+                            <span class="exp-period"><!-- EDIT: Mulai - Selesai -->2025 - Sekarang</span>
+                            <span class="accordion-icon" aria-hidden="true">▼</span>
+                        </div>
+                    </button>
+                    <div id="exp-1-content" class="exp-content">
+                        <ul>
+                            <li><!-- EDIT: Pencapaian 1 -->Berhasil memproses rekrutmen ratusan kandidat berkualitas tinggi untuk posisi strategis teknologi dan operasional dengan efisiensi waktu seleksi 25%.</li>
+                            <li><!-- EDIT: Pencapaian 2 -->Memimpin implementasi dan kustomisasi sistem HRIS & ERP (Frappe HR & ERPNext) guna mengotomatisasi alur kerja rekrutmen dan notifikasi email.</li>
+                            <li><!-- EDIT: Pencapaian 3 -->Merancang gamified psychometric assessment (IGPA) untuk evaluasi perilaku dan kognitif kandidat secara objektif.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Pengalaman 2 -->
+                <article class="exp-card" data-category="recruitment">
+                    <button class="exp-header" aria-expanded="false" aria-controls="exp-2-content">
+                        <div class="exp-title-group">
+                            <h3><!-- EDIT: Jabatan -->HR Speaker & Career Development Trainer</h3>
+                            <span class="company"><!-- EDIT: Perusahaan -->Berbagai Institusi & SMK Vokasi</span>
+                        </div>
+                        <div class="exp-meta">
+                            <span class="exp-period"><!-- EDIT: Mulai - Selesai -->2026</span>
+                            <span class="accordion-icon" aria-hidden="true">▼</span>
+                        </div>
+                    </button>
+                    <div id="exp-2-content" class="exp-content">
+                        <ul>
+                            <li><!-- EDIT: Pencapaian 1 -->Memberikan pelatihan karier dan bedah CV kepada lebih dari 500 siswa SMK dan mahasiswa di berbagai daerah.</li>
+                            <li><!-- EDIT: Pencapaian 2 -->Mengedukasi peserta mengenai persiapan wawancara kerja berbasis STAR method dan personal branding di LinkedIn.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- EDIT: Bagian Proyek (Hapus section ini atau tulis "tidak ada" jika tidak diperlukan) -->
+        <section id="proyek" class="reveal">
+            <h2>Proyek</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div>
+                        <h3><!-- EDIT: Nama Proyek -->Integrated Gamified Psychometric Assessment (IGPA)</h3>
+                        <p><!-- EDIT: Deskripsi singkat -->Model seleksi kandidat gamifikasi menggunakan teka-teki kognitif, Sudoku, dan mekanika Tower of Hanoi.</p>
+                    </div>
+                    <a href="#" class="project-link" target="_blank" rel="noopener">Lihat Detail →</a>
+                </div>
+                <div class="project-card">
+                    <div>
+                        <h3><!-- EDIT: Nama Proyek -->Frappe HR Custom Automation</h3>
+                        <p><!-- EDIT: Deskripsi singkat -->Otomatisasi alur status kandidat rekrutmen dan email notifikasi menggunakan Python dan Jinja HTML.</p>
+                    </div>
+                    <a href="#" class="project-link" target="_blank" rel="noopener">Lihat Detail →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDIT: Bagian Keahlian dan Alat -->
+        <section id="keahlian" class="reveal">
+            <h2>Keahlian dan Alat</h2>
+            <div class="skills-grid">
+                <!-- EDIT: Daftar keahlian pisahkan dengan koma -->
+                <span class="skill-tag">Talent Acquisition</span>
+                <span class="skill-tag">Behavioral Event Interviewing (BEI)</span>
+                <span class="skill-tag">Frappe HR & ERPNext</span>
+                <span class="skill-tag">Psychometric Testing</span>
+                <span class="skill-tag">HRIS Implementation</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">HTML/CSS</span>
+                <span class="skill-tag">Public Speaking & Training</span>
+                <span class="skill-tag">STAR Method</span>
+            </div>
+        </section>
+
+        <!-- EDIT: Bagian Sertifikasi dan Pendidikan -->
+        <section id="sertifikasi" class="reveal">
+            <h2>Sertifikasi dan Pendidikan</h2>
+            <div class="edu-cert-grid">
+                <div class="sub-section">
+                    <h3>Sertifikasi</h3>
+                    <div class="item-card">
+                        <h4><!-- EDIT: Nama Sertifikasi -->Professional HR Recruitment & Selection</h4>
+                        <p><!-- EDIT: Penerbit & Tahun -->Sertifikasi Kompetensi Industri — 2025</p>
+                    </div>
+                </div>
+                <div class="sub-section">
+                    <h3>Pendidikan</h3>
+                    <div class="item-card">
+                        <h4><!-- EDIT: Gelar & Institusi -->Sarjana Terapan / Strata 1</h4>
+                        <p><!-- EDIT: Institusi & Tahun -->Malang, Indonesia — 2024</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDIT: Bagian Kontak -->
+        <section id="kontak" class="reveal">
+            <h2>Kontak</h2>
+            <p class="contact-content"><!-- EDIT: Ajakan kontak -->Tertarik berkolaborasi, mendiskusikan peluang karier, atau mengadakan workshop rekrutmen? Silakan hubungi saya melalui jalur di bawah ini.</p>
+            <div class="contact-details">
+                <a href="mailto:galang.cahyono@example.com" class="contact-item">
+                    📧 <!-- EDIT: Email -->galang.cahyono@example.com
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-item">
+                    💼 LinkedIn Profile
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener" class="contact-item">
+                    🐙 GitHub Profile
+                </a>
+            </div>
+            <a href="mailto:galang.cahyono@example.com" class="btn btn-primary">Kirim Email Sekarang</a>
+        </section>
+    </main>
+
+    <!-- EDIT: Footer Sederhana -->
+    <footer>
+        <p>&copy; 2026 Galang Putra Cahyono. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <!-- EDIT: Skrip Interaktif (Accordion, Filter, Tema, Animasi Scroll) -->
+    <script>
+        // 1. Tombol Buka-Tutup Pengalaman (Accordion)
+        document.querySelectorAll('.exp-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const expanded = header.getAttribute('aria-expanded') === 'true';
+                header.setAttribute('aria-expanded', !expanded);
+                const content = document.getElementById(header.getAttribute('aria-controls'));
+                content.classList.toggle('active');
+            });
+        });
+
+        // 2. Filter Pengalaman berdasarkan Keahlian
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const expCards = document.querySelectorAll('.exp-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.setAttribute('aria-pressed', 'false'));
+                btn.setAttribute('aria-pressed', 'true');
+                const filter = btn.getAttribute('data-filter');
+
+                expCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category').includes(filter)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // 3. Toggle Tema Terang/Gelap dengan localStorage dan try/catch
+        const themeToggle = document.getElementById('themeToggle');
+        const currentTheme = (() => {
+            try {
+                return localStorage.getItem('theme');
+            } catch (e) {
+                return null;
+            }
+        })();
+
+        if (currentTheme) {
+            document.documentElement.setAttribute('data-theme', currentTheme);
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            let theme = document.documentElement.getAttribute('data-theme');
+            let newTheme = theme === 'dark' ? 'light' : 'dark';
+            
+            document.documentElement.setAttribute('data-theme', newTheme);
+            try {
+                localStorage.setItem('theme', newTheme);
+            } catch (e) {
+                // Ignore localStorage errors
+            }
+        });
+
+        // 4. Animasi Muncul Saat Scroll (Menghormati prefers-reduced-motion)
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
